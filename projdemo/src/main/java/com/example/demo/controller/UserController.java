@@ -15,8 +15,8 @@ public class UserController {
 	@Autowired
     UserRepository userRepository;
 	
-	 @RequestMapping(value = "/{Page_Id}") 
-	    public User read(@PathVariable String Page_Id) {
-	        return userRepository.findOne( Page_Id);
+	 @RequestMapping(value = "/{Id}") 
+	    public User read(@PathVariable String Id) {
+	        return userRepository.findOne( Id);
 	    }
 }
