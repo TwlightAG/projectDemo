@@ -5,7 +5,9 @@ import java.util.ArrayList;
 import org.springframework.data.annotation.Id;
 
 public class User {
+	
 	@Id
+	private String id;
 	private String Page_ID;
 	private ArrayList Errors;
 	private ArrayList Findings;
@@ -13,6 +15,14 @@ public class User {
 	private String title;
 	private ArrayList meta;
 	private ArrayList links;
+	private ArrayList div; 
+	private ArrayList form;
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
 	public String getPage_ID() {
 		return Page_ID;
 	}
@@ -55,6 +65,19 @@ public class User {
 	public void setLinks(ArrayList links) {
 		this.links = links;
 	}
+	public ArrayList getDiv() {
+		return div;
+	}
+	public void setDiv(ArrayList div) {
+		this.div = div;
+	}
+	public ArrayList getForm() {
+		return form;
+	}
+	public void setForm(ArrayList form) {
+		this.form = form;
+	}
+	
 	
 
 }
